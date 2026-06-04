@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Detalle del proyecto SweetScape, aplicacion movil desarrollada con .NET, Xamarin y C#." />
+  <title>SweetScape | Portafolio Brian G&oacute;mez</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Navegaci&oacute;n principal">
+      <a class="brand" href="index.html" aria-label="Volver al inicio">
+        <span class="brand-mark">BG</span>
+        <span>Brian G&oacute;mez</span>
+      </a>
+      <a class="nav-back" href="index.html#proyectos">Volver a proyectos</a>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <section class="project-hero">
+      <div class="project-hero-copy reveal">
+        <p class="eyebrow">Aplicaci&oacute;n m&oacute;vil</p>
+        <h1>SweetScape</h1>
+        <p>
+          Aplicaci&oacute;n m&oacute;vil desarrollada con Visual Studio 2022, .NET y Xamarin para optimizar la gesti&oacute;n
+          de una pasteler&iacute;a mediante registros, CRUD e interfaces simples para dispositivos m&oacute;viles.
+        </p>
+        <div class="hero-actions">
+          <a class="btn" href="index.html#proyectos">Volver al portafolio</a>
+        </div>
+      </div>
+      <dl class="project-facts reveal">
+        <div>
+          <dt>Rol</dt>
+          <dd>Desarrollo de aplicaci&oacute;n</dd>
+        </div>
+        <div>
+          <dt>Stack</dt>
+          <dd>.NET, Xamarin, C#, HTML, CSS</dd>
+        </div>
+        <div>
+          <dt>Objetivo</dt>
+          <dd>Gestionar clientes, productos y sucursales</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section" aria-labelledby="gallery-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Galer&iacute;a</p>
+        <h2 id="gallery-title">Pantallas del proyecto</h2>
+      </div>
+
+      <div class="media-grid">
+        <button class="media-button reveal" type="button" data-modal-image="assets/SweetScape1.png" data-modal-alt="Pantalla de SweetScape con listado de productos">
+          <img src="assets/SweetScape1.png" alt="Pantalla de SweetScape con listado de productos" loading="lazy" />
+        </button>
+        <button class="media-button reveal" type="button" data-modal-image="assets/SweetScape2.png" data-modal-alt="Formulario de SweetScape para gestionar informaci&oacute;n">
+          <img src="assets/SweetScape2.png" alt="Formulario de SweetScape para gestionar informaci&oacute;n" loading="lazy" />
+        </button>
+        <button class="media-button reveal" type="button" data-modal-image="assets/SweetScape3.png" data-modal-alt="Vista adicional de la aplicaci&oacute;n SweetScape">
+          <img src="assets/SweetScape3.png" alt="Vista adicional de la aplicaci&oacute;n SweetScape" loading="lazy" />
+        </button>
+      </div>
+    </section>
+
+    <section class="section detail-grid">
+      <article class="detail-card reveal">
+        <p class="eyebrow">Descripci&oacute;n</p>
+        <h2>Gesti&oacute;n m&oacute;vil para pasteler&iacute;a</h2>
+        <p>
+          SweetScape permite registrar clientes, productos y sucursales mediante un sistema CRUD.
+          El proyecto se enfoc&oacute; en una interfaz simple, adaptable a dispositivos m&oacute;viles y f&aacute;cil de
+          utilizar para tareas frecuentes de gesti&oacute;n.
+        </p>
+      </article>
+
+      <article class="detail-card reveal">
+        <p class="eyebrow">Caracter&iacute;sticas</p>
+        <h2>Funciones principales</h2>
+        <ul class="feature-list">
+          <li>Registro y gesti&oacute;n de clientes.</li>
+          <li>CRUD completo para productos de la pasteler&iacute;a.</li>
+          <li>Administraci&oacute;n de sucursales.</li>
+          <li>Interfaz m&oacute;vil intuitiva y amigable.</li>
+          <li>Conectividad con bases de datos locales.</li>
+        </ul>
+      </article>
+    </section>
+  </main>
+
+  <div id="imgModal" class="modal" role="dialog" aria-modal="true" aria-label="Imagen ampliada">
+    <button class="modal-close" type="button" aria-label="Cerrar imagen">&times;</button>
+    <img id="imgInModal" class="modal-content" alt="" />
+  </div>
+
+  <script src="css/main.js"></script>
+</body>
+</html>

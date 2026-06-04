@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Detalle del proyecto Arduino ESP8266, auto controlado por Wi-Fi desde una interfaz web." />
+  <title>Arduino ESP8266 | Portafolio Brian G&oacute;mez</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Navegaci&oacute;n principal">
+      <a class="brand" href="index.html" aria-label="Volver al inicio">
+        <span class="brand-mark">BG</span>
+        <span>Brian G&oacute;mez</span>
+      </a>
+      <a class="nav-back" href="index.html#proyectos">Volver a proyectos</a>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <section class="project-hero">
+      <div class="project-hero-copy reveal">
+        <p class="eyebrow">IoT y hardware</p>
+        <h1>Arduino ESP8266</h1>
+        <p>
+          Sistema basado en Arduino con capacidad de movimiento, controlado desde una interfaz web
+          publicada por la placa ESP8266 en la red Wi-Fi local.
+        </p>
+        <div class="hero-actions">
+          <a class="btn" href="index.html#proyectos">Volver al portafolio</a>
+          <a class="btn btn-outline" href="https://github.com/BrianG-R/Arduino-ESP8266.git" target="_blank" rel="noopener noreferrer">Ver en GitHub</a>
+        </div>
+      </div>
+      <dl class="project-facts reveal">
+        <div>
+          <dt>Rol</dt>
+          <dd>Programaci&oacute;n e integraci&oacute;n</dd>
+        </div>
+        <div>
+          <dt>Stack</dt>
+          <dd>Arduino, ESP8266, HTML, JavaScript</dd>
+        </div>
+        <div>
+          <dt>Objetivo</dt>
+          <dd>Control remoto desde navegador m&oacute;vil</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section" aria-labelledby="gallery-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Galer&iacute;a</p>
+        <h2 id="gallery-title">Prototipo y funcionamiento</h2>
+      </div>
+
+      <div class="media-grid">
+        <button class="media-button reveal" type="button" data-modal-image="assets/Arduino.png" data-modal-alt="Vista del auto rob&oacute;tico Arduino ESP8266">
+          <img src="assets/Arduino.png" alt="Vista del auto rob&oacute;tico Arduino ESP8266" loading="lazy" />
+        </button>
+        <button class="media-button reveal" type="button" data-modal-image="assets/Arduino1.png" data-modal-alt="Detalle del prototipo con placa ESP8266">
+          <img src="assets/Arduino1.png" alt="Detalle del prototipo con placa ESP8266" loading="lazy" />
+        </button>
+        <button class="media-button video-thumb reveal" type="button" data-modal-video="assets/Arduino2.mp4" aria-label="Ver video del proyecto Arduino ESP8266">
+          <video muted preload="metadata" playsinline>
+            <source src="assets/Arduino2.mp4" type="video/mp4" />
+          </video>
+          <span>Ver video</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="section detail-grid">
+      <article class="detail-card reveal">
+        <p class="eyebrow">Descripci&oacute;n</p>
+        <h2>Auto controlado por Wi-Fi</h2>
+        <p>
+          El dispositivo genera un servidor web al que se puede acceder desde la red Wi-Fi local.
+          Desde esa interfaz es posible controlar el movimiento del auto usando un celular o computador,
+          explorando conceptos de IoT y comunicaci&oacute;n entre software y hardware.
+        </p>
+      </article>
+
+      <article class="detail-card reveal">
+        <p class="eyebrow">Caracter&iacute;sticas</p>
+        <h2>Funciones principales</h2>
+        <ul class="feature-list">
+          <li>Control remoto mediante red Wi-Fi local.</li>
+          <li>Movimiento bidireccional y control de velocidad.</li>
+          <li>Interfaz web accesible desde m&oacute;vil o PC.</li>
+          <li>Servidor web integrado en la placa ESP8266.</li>
+          <li>Exploraci&oacute;n de conceptos de IoT.</li>
+        </ul>
+      </article>
+    </section>
+  </main>
+
+  <div id="imgModal" class="modal" role="dialog" aria-modal="true" aria-label="Imagen ampliada">
+    <button class="modal-close" type="button" aria-label="Cerrar imagen">&times;</button>
+    <img id="imgInModal" class="modal-content" alt="" />
+  </div>
+
+  <div id="videoModal" class="modal" role="dialog" aria-modal="true" aria-label="Video ampliado">
+    <button class="modal-close" type="button" aria-label="Cerrar video">&times;</button>
+    <video class="modal-video" controls>
+      <source src="" type="video/mp4" />
+      Tu navegador no soporta videos.
+    </video>
+  </div>
+
+  <script src="css/main.js"></script>
+</body>
+</html>

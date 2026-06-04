@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Detalle del proyecto Gestion de Inventario, sistema CRUD en Java con MySQL, JDBC y Swing." />
+  <title>Gesti&oacute;n de Inventario | Portafolio Brian G&oacute;mez</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Navegaci&oacute;n principal">
+      <a class="brand" href="index.html" aria-label="Volver al inicio">
+        <span class="brand-mark">BG</span>
+        <span>Brian G&oacute;mez</span>
+      </a>
+      <a class="nav-back" href="index.html#proyectos">Volver a proyectos</a>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <section class="project-hero">
+      <div class="project-hero-copy reveal">
+        <p class="eyebrow">Aplicaci&oacute;n de escritorio</p>
+        <h1>Gesti&oacute;n de Inventario</h1>
+        <p>
+          Sistema CRUD desarrollado en Java para registrar, editar, eliminar y consultar productos
+          conectados a una base de datos MySQL.
+        </p>
+        <div class="hero-actions">
+          <a class="btn" href="index.html#proyectos">Volver al portafolio</a>
+          <a class="btn btn-outline" href="https://github.com/BrianG-R/GestionInventarioBeta.git" target="_blank" rel="noopener noreferrer">Ver en GitHub</a>
+        </div>
+      </div>
+      <dl class="project-facts reveal">
+        <div>
+          <dt>Rol</dt>
+          <dd>Desarrollo Java y base de datos</dd>
+        </div>
+        <div>
+          <dt>Stack</dt>
+          <dd>Java, MySQL, JDBC, Swing</dd>
+        </div>
+        <div>
+          <dt>Objetivo</dt>
+          <dd>Gestionar stock y registros en tiempo real</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section" aria-labelledby="gallery-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Galer&iacute;a</p>
+        <h2 id="gallery-title">Interfaz y gesti&oacute;n de datos</h2>
+      </div>
+
+      <div class="media-grid">
+        <button class="media-button reveal" type="button" data-modal-image="assets/GestionInventario1.png" data-modal-alt="Pantalla del sistema de gesti&oacute;n de inventario">
+          <img src="assets/GestionInventario1.png" alt="Pantalla del sistema de gesti&oacute;n de inventario" loading="lazy" />
+        </button>
+        <button class="media-button reveal" type="button" data-modal-image="assets/GestionInventario.png" data-modal-alt="Interfaz principal del sistema de inventario">
+          <img src="assets/GestionInventario.png" alt="Interfaz principal del sistema de inventario" loading="lazy" />
+        </button>
+        <button class="media-button reveal" type="button" data-modal-image="assets/GestionInventario2.png" data-modal-alt="Formulario del sistema de inventario">
+          <img src="assets/GestionInventario2.png" alt="Formulario del sistema de inventario" loading="lazy" />
+        </button>
+      </div>
+    </section>
+
+    <section class="section detail-grid">
+      <article class="detail-card reveal">
+        <p class="eyebrow">Descripci&oacute;n</p>
+        <h2>CRUD conectado a MySQL</h2>
+        <p>
+          La aplicaci&oacute;n permite registrar productos, editar informaci&oacute;n, eliminar registros y consultar
+          stock. Uno de los retos principales fue implementar una conexi&oacute;n estable entre Java y MySQL,
+          junto con validaciones y manejo de excepciones para evitar errores durante la manipulaci&oacute;n de datos.
+        </p>
+      </article>
+
+      <article class="detail-card reveal">
+        <p class="eyebrow">Caracter&iacute;sticas</p>
+        <h2>Funciones principales</h2>
+        <ul class="feature-list">
+          <li>Registro y edici&oacute;n de productos con validaci&oacute;n de datos.</li>
+          <li>Eliminaci&oacute;n y consulta de inventario en tiempo real.</li>
+          <li>Conexi&oacute;n a MySQL usando JDBC.</li>
+          <li>Interfaz gr&aacute;fica desarrollada con Java Swing.</li>
+          <li>Manejo de errores y excepciones.</li>
+        </ul>
+      </article>
+    </section>
+  </main>
+
+  <div id="imgModal" class="modal" role="dialog" aria-modal="true" aria-label="Imagen ampliada">
+    <button class="modal-close" type="button" aria-label="Cerrar imagen">&times;</button>
+    <img id="imgInModal" class="modal-content" alt="" />
+  </div>
+
+  <script src="css/main.js"></script>
+</body>
+</html>
